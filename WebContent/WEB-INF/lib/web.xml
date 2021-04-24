@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+       
+    
+        <servlet>
+		<servlet-name>docInsert</servlet-name>
+		<servlet-class>src.ControllerClass.DocAddServlet</servlet-class>
+	    </servlet>
+	
+	    <servlet-mapping>
+		<servlet-name>docInsert</servlet-name>
+		<url-pattern>/DocAddServlet</url-pattern>
+	    </servlet-mapping>
+        
+        
+        <servlet>
+		<servlet-name>docUpSearch</servlet-name>
+		<servlet-class>src.ControllerClass.searchDocServlet</servlet-class>
+	    </servlet>
+	
+	    <servlet-mapping>
+		<servlet-name>docUpSearch</servlet-name>
+		<url-pattern>/searchDocServlet</url-pattern>
+	    </servlet-mapping>
+	    
+	    <servlet>
+		<servlet-name>docUpdate</servlet-name>
+		<servlet-class>src.ControllerClass.updateDocServlet</servlet-class>
+	    </servlet>
+	
+	    <servlet-mapping>
+		<servlet-name>docUpdate</servlet-name>
+		<url-pattern>/updateDocServlet</url-pattern>
+	    </servlet-mapping>
+	    
+	    
+	    <servlet>
+		<servlet-name>docDelete</servlet-name>
+		<servlet-class>src.ControllerClass.deleteDoctorServlet</servlet-class>
+	    </servlet>
+	
+	    <servlet-mapping>
+		<servlet-name>docDelete</servlet-name>
+		<url-pattern>/deleteDoctorServlet</url-pattern>
+	    </servlet-mapping>
+         
+      
+        
+         
+ </web-app>
